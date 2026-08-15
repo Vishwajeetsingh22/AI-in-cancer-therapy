@@ -1,12 +1,6 @@
-# OncoFusionNet-LC
+# Research paper project- AI in Cancer Therapy
 
 **Artificial Intelligence in Cancer Therapy: An Enhanced Machine Learning Framework for Personalized Lung Cancer Treatment Prediction**
-
-IEEE conference paper (Paper ID 492) submitted to **NMITCON-2026**.
-
-Author: **Vishwajeet Singh**, School of CS & IT (MCA), Jain (Deemed-to-be University), JGI Knowledge Campus, Bengaluru, India — with Sindhu R Kashyap, Syed Faizan Pasha, and Suvendu Mata.
-
----
 
 ## Overview
 
@@ -78,11 +72,12 @@ The script in `src/model_training.py` is the baseline single-model benchmark act
 
 Running `src/model_training.py` on this dataset reproduces the same pattern reported in the paper — a Random Forest with strong-looking accuracy but an AUC close to 0.50 (random), and a confusion matrix dominated by the majority class:
 
-![Confusion Matrix](results/confusion_matrix.png)
-![ROC Curve](results/roc_curve.png)
-![Feature Importance](results/feature_importance.png)
-![Target Class Distribution](results/target_distribution.png)
-![Feature Correlation Heatmap](results/correlation_heatmap.png)
+<img width="960" height="720" alt="confusion_matrix" src="https://github.com/user-attachments/assets/5ccbc960-a40c-46db-8f73-f6e3ef45a1bf" />
+<img width="960" height="720" alt="target_distribution" src="https://github.com/user-attachments/assets/c24247d1-94e7-4d43-bc40-ac4c625884b9" />
+<img width="960" height="720" alt="roc_curve" src="https://github.com/user-attachments/assets/1512c41b-4dd4-4629-9f62-7796210d2514" />
+<img width="960" height="720" alt="feature_importance" src="https://github.com/user-attachments/assets/a84b0088-f265-465a-97bc-4edf358ef5da" />
+<img width="1800" height="1500" alt="correlation_heatmap" src="https://github.com/user-attachments/assets/62da6233-761f-4630-956b-c76991acf20e" />
+
 
 ## Setup
 
@@ -117,22 +112,6 @@ This reads `dataset/lung_cancer.csv`, trains the model, prints accuracy/classifi
 - Apply federated learning across institutions.
 - Implement and evaluate SHAP-based explainability and a clinician feedback loop.
 - Formalize the dataset-reliability audit into a reusable pre-registration checklist for synthetic healthcare datasets.
-
-## Project history
-
-This project went through a revision cycle for NMITCON-2026 (Paper ID 492):
-
-1. **Initial draft** — reported a fusion-model accuracy of 69.2% and AUC of 0.73, without a dataset-reliability audit.
-2. **Revised, submitted version** (included here) — added the leakage-free split, SMOTE-on-train-only correction, and the dataset-reliability audit, which revealed the dataset carries no learnable signal for this target. This is the version reflected in this README and in `paper/OncoFusionNet-LC_Revised_Paper.pdf`.
-
-## Citation
-
-```
-Singh, V., Kashyap, S. R., Pasha, S. F., & Mata, S.
-"Artificial Intelligence in Cancer Therapy: An Enhanced Machine Learning
-Framework for Personalized Lung Cancer Treatment Prediction."
-NMITCON-2026, Paper ID 492.
-```
 
 ## Disclaimer
 
