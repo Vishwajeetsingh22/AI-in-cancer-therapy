@@ -1,4 +1,4 @@
-# 🧬 OncoFusionNet-LC
+# Research Paper
 
 ### Artificial Intelligence in Cancer Therapy: An Enhanced Machine Learning Framework for Personalized Lung Cancer Treatment Prediction
 
